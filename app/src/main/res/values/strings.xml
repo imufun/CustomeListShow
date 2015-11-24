@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ListViewPractice</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="title">
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 14</item>
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 1</item>
+        <item>item 15</item>
+        <item>item 158</item>
+        <item>item 10</item>
+        <item>item 11</item>
+        <item>item 15</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>descriptions 1</item>
+        <item>descriptions 2</item>
+        <item>descriptions 3</item>
+        <item>descriptions 4</item>
+        <item>descriptions 5</item>
+    </string-array>
+</resources>
