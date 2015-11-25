@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         memoDescription = res.getStringArray(R.array.descriptions);
         mListView = (ListView) findViewById(R.id.listView);
 
+        //ImranAdapter imranAdapter=new ImranAdapter(this,)
+
 
     }
 

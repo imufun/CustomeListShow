@@ -17,6 +17,30 @@ public class ImranAdapter extends ArrayAdapter<String> {
     String[] memtitle;
     String[] description;
 
+    public int[] getImgs() {
+        return imgs;
+    }
+
+    public void setImgs(int[] imgs) {
+        this.imgs = imgs;
+    }
+
+    public String[] getMemtitle() {
+        return memtitle;
+    }
+
+    public void setMemtitle(String[] memtitle) {
+        this.memtitle = memtitle;
+    }
+
+    public String[] getDescription() {
+        return description;
+    }
+
+    public void setDescription(String[] description) {
+        this.description = description;
+    }
+
     ImranAdapter(Context context, String[] title, int images[], String memTitle[], String description[]) {
         super(context, R.layout.single_row, R.id.textView, title);
         this.imgs = images;
@@ -34,7 +58,9 @@ public class ImranAdapter extends ArrayAdapter<String> {
         TextView largeTextTitle = (TextView) row.findViewById(R.id.textView);
         TextView smalltextDescription = (TextView) row.findViewById(R.id.smalltext);
 
-        imageView.setImageResource(imgs.p);
+        imageView.setImageResource(imgs[position]);
+        largeTextTitle.setText(memtitle[position]);
+        smalltextDescription.setText(description[position]);
 
 
         return super.getView(position, convertView, parent);
