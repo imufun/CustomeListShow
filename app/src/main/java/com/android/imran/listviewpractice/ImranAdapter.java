@@ -12,8 +12,16 @@ import android.widget.TextView;
  * Created by Imran on 11/25/2015.
  */
 public class ImranAdapter extends ArrayAdapter<String> {
-    ImranAdapter(Context context, String[] title) {
+
+    int[] imgs;
+    String[] memtitle;
+    String[] description;
+
+    ImranAdapter(Context context, String[] title, int images[], String memTitle[], String description[]) {
         super(context, R.layout.single_row, R.id.textView, title);
+        this.imgs = images;
+        this.memtitle = memTitle;
+        this.description = description;
 
     }
 
@@ -25,6 +33,8 @@ public class ImranAdapter extends ArrayAdapter<String> {
         ImageView imageView = (ImageView) row.findViewById(R.id.imageView);
         TextView largeTextTitle = (TextView) row.findViewById(R.id.textView);
         TextView smalltextDescription = (TextView) row.findViewById(R.id.smalltext);
+
+        imageView.setImageResource(imgs.p);
 
 
         return super.getView(position, convertView, parent);
